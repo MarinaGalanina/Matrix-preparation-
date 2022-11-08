@@ -1,0 +1,29 @@
+[
+  {
+    "name": "echo",
+    "namespace": "namespace-a",
+    "revision": "1",
+    "updated": "2022-07-14 20:15:32.640185725 +0000 UTC",
+    "status": "deployed",
+    "chart": "compaas-echoserver-test-2.1.1",
+    "app_version": "2.1.1-229-release"
+  },
+  {
+    "name": "echo",
+    "namespace": "namespace-b",
+    "revision": "1",
+    "updated": "2022-07-14 20:15:41.997846388 +0000 UTC",
+    "status": "deployed",
+    "chart": "compaas-echoserver-test-2.1.1",
+    "app_version": "2.1.1-229-release"
+  },
+  {
+    "name": "echo",
+    "namespace": "namespace-c",
+    "revision": "1",
+    "updated": "2022-07-14 20:18:23.961246767 +0000 UTC",
+    "status": "deployed",
+    "chart": "compaas-echoserver-test-2.1.1",
+    "app_version": "2.1.1-229-release"
+  }
+]

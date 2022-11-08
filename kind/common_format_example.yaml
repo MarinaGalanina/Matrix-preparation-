@@ -1,0 +1,23 @@
+name: "echo"
+displayName: "echo"
+description: "compaas-echoserver-test-2.1.2"
+services:
+  - name: "echo-compaas-echoserver-test2"
+    displayName: "echo-compaas-echoserver-test2"
+    description: ""
+    ports:
+      - id: "46978:UDP"
+        port: 46978
+        transportLayer: "UDP"
+        applicationLayer: ""
+        auth: ""
+        note: ""
+    connections:
+      - type: "internal"
+        destination:
+          - service : ""
+            portId: "729"
+
+
+
+

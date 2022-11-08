@@ -1,0 +1,69 @@
+{
+  "flow": {
+    "time": "2022-07-14T20:46:58.727819029Z",
+    "verdict": "FORWARDED",
+    "ethernet": {
+      "source": "0a:bf:c0:6a:bf:c1",
+      "destination": "ca:5d:18:cf:40:60"
+    },
+    "IP": {
+      "source": "10.244.0.51",
+      "destination": "10.244.1.39",
+      "ipVersion": "IPv4"
+    },
+    "l4": {
+      "UDP": {
+        "source_port": 53,
+        "destination_port": 46978
+      }
+    },
+    "source": {
+      "identity": 35960,
+      "namespace": "kube-system",
+      "labels": [
+        "k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system",
+        "k8s:io.cilium.k8s.policy.cluster=kind-kind",
+        "k8s:io.cilium.k8s.policy.serviceaccount=coredns",
+        "k8s:io.kubernetes.pod.namespace=kube-system",
+        "k8s:k8s-app=kube-dns"
+      ],
+      "pod_name": "coredns-6d4b75cb6d-f2ctq"
+    },
+    "destination": {
+      "ID": 729,
+      "identity": 50936,
+      "namespace": "namespace-c",
+      "labels": [
+        "k8s:app=compaas-echoserver-test",
+        "k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=namespace-c",
+        "k8s:io.cilium.k8s.policy.cluster=kind-kind",
+        "k8s:io.cilium.k8s.policy.serviceaccount=default",
+        "k8s:io.kubernetes.pod.namespace=namespace-c",
+        "k8s:release=echo"
+      ],
+      "pod_name": "echo-compaas-echoserver-test-f89ffd6c9-mzk5b",
+      "workloads": [
+        {
+          "name": "echo-compaas-echoserver-test-f89ffd6c9",
+          "kind": "ReplicaSet"
+        }
+      ]
+    },
+    "Type": "L3_L4",
+    "node_name": "kind-kind/kind-worker",
+    "reply": true,
+    "event_type": {
+      "type": 4
+    },
+    "traffic_direction": "EGRESS",
+    "trace_observation_point": "TO_ENDPOINT",
+    "is_reply": true,
+    "interface": {
+      "index": 17,
+      "name": "lxc24668e7e4189"
+    },
+    "Summary": "UDP"
+  },
+  "node_name": "kind-kind/kind-worker",
+  "time": "2022-07-14T20:46:58.727819029Z"
+}

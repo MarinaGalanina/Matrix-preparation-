@@ -1,0 +1,61 @@
+{
+  "flow": {
+    "time": "2022-07-14T20:46:58.827490434Z",
+    "verdict": "DROPPED",
+    "drop_reason": 133,
+    "ethernet": {
+      "source": "ca:5d:18:cf:40:60",
+      "destination": "0a:bf:c0:6a:bf:c1"
+    },
+    "IP": {
+      "source": "10.244.1.39",
+      "destination": "104.244.42.66",
+      "ipVersion": "IPv4"
+    },
+    "l4": {
+      "TCP": {
+        "source_port": 56452,
+        "destination_port": 443,
+        "flags": {
+          "SYN": true
+        }
+      }
+    },
+    "source": {
+      "ID": 729,
+      "identity": 50936,
+      "namespace": "namespace-c",
+      "labels": [
+        "k8s:app=compaas-echoserver-test",
+        "k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=namespace-c",
+        "k8s:io.cilium.k8s.policy.cluster=kind-kind",
+        "k8s:io.cilium.k8s.policy.serviceaccount=default",
+        "k8s:io.kubernetes.pod.namespace=namespace-c",
+        "k8s:release=echo"
+      ],
+      "pod_name": "echo-compaas-echoserver-test-f89ffd6c9-mzk5b",
+      "workloads": [
+        {
+          "name": "echo-compaas-echoserver-test-f89ffd6c9",
+          "kind": "ReplicaSet"
+        }
+      ]
+    },
+    "destination": {
+      "identity": 2,
+      "labels": [
+        "reserved:world"
+      ]
+    },
+    "Type": "L3_L4",
+    "node_name": "kind-kind/kind-worker",
+    "event_type": {
+      "type": 5
+    },
+    "traffic_direction": "EGRESS",
+    "drop_reason_desc": "POLICY_DENIED",
+    "Summary": "TCP Flags: SYN"
+  },
+  "node_name": "kind-kind/kind-worker",
+  "time": "2022-07-14T20:46:58.827490434Z"
+}
