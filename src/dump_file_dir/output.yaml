@@ -1,0 +1,19 @@
+description: compaas-echoserver-test-2.1.1
+displayName: echo
+name: echo
+services:
+- connections:
+  - destination:
+    - portId: 56452:TCP
+      service: ''
+    type: internal
+  description: ''
+  displayName: echo-compaas-echoserver-test
+  name: echo-compaas-echoserver-test
+  ports:
+  - applicationLayer: ''
+    auth: ''
+    id: 50936:UDP
+    note: ''
+    port: '50936'
+    transportLayer: UDP
